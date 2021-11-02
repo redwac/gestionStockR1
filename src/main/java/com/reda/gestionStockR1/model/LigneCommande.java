@@ -6,6 +6,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
+import java.math.BigDecimal;
 
 @Data
 //@Builder
@@ -19,7 +20,7 @@ public class LigneCommande {
     private Long id;
 
     @Column(name = "quantite")
-    private int quantite;
+    private BigDecimal quantite;
 
     @ManyToOne
     @JoinColumn(name = "idArticle")

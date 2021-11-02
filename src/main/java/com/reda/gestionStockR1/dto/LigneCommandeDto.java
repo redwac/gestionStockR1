@@ -7,13 +7,15 @@ import com.reda.gestionStockR1.model.LigneCommande;
 import lombok.Builder;
 import lombok.Data;
 
+import java.math.BigDecimal;
+
 @Data
 @Builder
 public class LigneCommandeDto {
 
     private Long id;
 
-    private int quantite;
+    private BigDecimal quantite;
 
     private ArticleDto articleDto;
 

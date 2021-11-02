@@ -6,6 +6,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
+import java.math.BigDecimal;
 import java.util.List;
 
 @Data
@@ -24,7 +25,7 @@ public class Article {
     private String nom;
 
     @Column(name = "quantie")
-    private int quantite;
+    private BigDecimal quantite;
 
     @ManyToOne()
     @JoinColumn(name = "idCategory")

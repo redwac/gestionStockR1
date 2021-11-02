@@ -6,15 +6,17 @@ import com.reda.gestionStockR1.model.Category;
 import lombok.Builder;
 import lombok.Data;
 
+import java.math.BigDecimal;
+
 @Data
 @Builder
 public class ArticleDto {
 
-    private long id ;
+    private Long id ;
 
     private String nom;
 
-    private int quantite;
+    private BigDecimal quantite;
 
     private CategoryDto categoryDto;
 
