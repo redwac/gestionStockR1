@@ -4,4 +4,6 @@ import com.reda.gestionStockR1.model.Article;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 public interface ArticleRepository extends JpaRepository<Article, Long> {
+
+    Article findArticleByNom(String nom);
 }
