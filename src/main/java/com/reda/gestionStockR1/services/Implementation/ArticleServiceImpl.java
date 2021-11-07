@@ -19,7 +19,7 @@ import java.util.List;
 import java.util.stream.Collector;
 
 @Service
-@Slf4j
+@Slf4j // pour le login , fourni un logger
 public class ArticleServiceImpl implements ArticleService {
 
 
