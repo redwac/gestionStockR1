@@ -1,19 +1,17 @@
 package com.reda.gestionStockR1.controller.api;
 
 import com.reda.gestionStockR1.dto.CommandeClientDto;
-import org.springframework.web.bind.annotation.DeleteMapping;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
 import static com.reda.gestionStockR1.utils.Constant.APP_ROOT;
 
+
 public interface CommandeClientApi {
 
     @PostMapping(value = APP_ROOT + "/cmdclt/create")
-    CommandeClientDto save(CommandeClientDto dto);
+    CommandeClientDto save(@RequestBody CommandeClientDto dto);
 
     @GetMapping(value = APP_ROOT + "/cmdclt/{idCmd}")
     CommandeClientDto findById(@PathVariable("idCmd") Long id);

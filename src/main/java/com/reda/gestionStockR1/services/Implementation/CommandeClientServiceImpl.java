@@ -40,11 +40,11 @@ public class CommandeClientServiceImpl implements CommandeClientService {
     @Override
     public CommandeClientDto save(CommandeClientDto dto) {
         List<String> errors = CommandeClientValidator.validator(dto);
-        if (!errors.isEmpty()){
+        /*if (!errors.isEmpty()){
             log.error("L'objet Commande_Client n'est pas valid");
             throw new InvalidEntityException2("Commande client n'est valid reverifier le infos",
                     ErrorsCode.COMMANDE_CLIENT_NOT_FOUND, errors);
-        }
+        }*/
         Optional<Client> client = clientRepository.findById(dto.getClientDto().getId());
         if (client.isEmpty()){
             log.error("Le client n'existe pas dans la base donnees ");

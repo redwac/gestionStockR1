@@ -8,6 +8,7 @@ import java.util.List;
 
 import static com.reda.gestionStockR1.utils.Constant.APP_ROOT;
 
+
 public interface ArticleApi {
 
     @PostMapping(value = APP_ROOT + "/article/create")

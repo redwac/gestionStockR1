@@ -29,12 +29,12 @@ public class ClientServiceImpl implements ClientService {
 
     @Override
     public ClientDto save(ClientDto dto) {
-        List<String> errors = ClientValidator.validator(dto);
+       /* List<String> errors = ClientValidator.validator(dto);
         if (!errors.isEmpty()){
             log.error("L'Objet Client n'est pas valid");
             throw new InvalidEntityException2("Le Client n'est pas valid" ,
                     ErrorsCode.CLIENT_NOT_FOUND, errors);
-        }
+        }*/
         return ClientDto.fromEntity(
                 clientRepository.save(
                         ClientDto.toEntity(dto)

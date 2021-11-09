@@ -1,18 +1,15 @@
 package com.reda.gestionStockR1.model;
 
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.*;
 
 import javax.persistence.*;
 import java.math.BigDecimal;
 import java.util.List;
 
 @Data
-//@Builder
 @NoArgsConstructor
 @AllArgsConstructor
+@EqualsAndHashCode()
 @Entity
 @Table(name = "article")
 public class Article {

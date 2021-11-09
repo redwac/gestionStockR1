@@ -4,6 +4,7 @@ import com.reda.gestionStockR1.controller.api.CommandeClientApi;
 import com.reda.gestionStockR1.dto.CommandeClientDto;
 import com.reda.gestionStockR1.services.CommandeClientService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;

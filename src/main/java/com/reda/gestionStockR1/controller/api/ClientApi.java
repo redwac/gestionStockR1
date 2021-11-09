@@ -7,6 +7,7 @@ import java.util.List;
 
 import static com.reda.gestionStockR1.utils.Constant.APP_ROOT;
 
+
 public interface ClientApi {
 
     @PostMapping(value = APP_ROOT + "/client/create")
@@ -15,7 +16,7 @@ public interface ClientApi {
     @GetMapping(value = APP_ROOT + "/client/{idClient}")
     ClientDto findById(@PathVariable("idClient") Long id);
 
-    @GetMapping(value = "/client/all")
+    @GetMapping(value = APP_ROOT + "/client/all")
     List<ClientDto> findAll();
 
     @DeleteMapping(value = APP_ROOT + "/client/delete/{idClient}")

@@ -4,6 +4,7 @@ import com.reda.gestionStockR1.controller.api.ArticleApi;
 import com.reda.gestionStockR1.dto.ArticleDto;
 import com.reda.gestionStockR1.services.ArticleService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
