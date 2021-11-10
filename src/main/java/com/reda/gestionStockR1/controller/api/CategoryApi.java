@@ -1,13 +1,14 @@
 package com.reda.gestionStockR1.controller.api;
 
 import com.reda.gestionStockR1.dto.CategoryDto;
+import io.swagger.annotations.Api;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
 import static com.reda.gestionStockR1.utils.Constant.APP_ROOT;
 
-
+@Api(APP_ROOT + "/category")
 public interface CategoryApi {
 
     @PostMapping(value = APP_ROOT + "/category/create")
