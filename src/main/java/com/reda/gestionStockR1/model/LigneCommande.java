@@ -12,7 +12,8 @@ import java.math.BigDecimal;
 //@Builder
 @AllArgsConstructor
 @NoArgsConstructor
-@Entity(name = "LigneCommande")
+@Entity
+@Table(name = "LigneCommande")
 public class LigneCommande {
 
     @Id
